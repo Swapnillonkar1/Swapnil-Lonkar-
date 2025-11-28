@@ -1209,20 +1209,6 @@
             "
           >Subject: Opportunity for Collaboration / Internship
 
-Hi Swapnil,
-
-I came across your portfolio and was impressed by your work in AI/ML, embedded systems and networking.
-
-I’d like to connect with you regarding a potential opportunity / project in [briefly describe area].
-
-Looking forward to hearing from you.
-
-Thanks,
-[Your Name]</pre>
-        </div>
-      </div>
-    </section>
-
     <footer>
       <span>© <span id="year"></span> Swapnil Lahu Lonkar</span>
       <span>Built with HTML & CSS · Hosted on GitHub Pages</span>
