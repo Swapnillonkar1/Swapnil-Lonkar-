@@ -1,5 +1,6 @@
-remote_theme: pages-themes/time-machine@v0.2.0
+remote_theme: sproogen/modern-resume-theme
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-remote-theme
+
 title: Swapnil Lahu Lonkar
-description:  I am Swapnil Lonkar and I am pursuing my B.Tech in Electronics and Telecommunication Engineering from MIT Academy of Engineering. I am a voracious reader and the hobby has honed my ability to learn new concepts and develop insightful and mindful outcomes. I am a very hardworking, optimistic and passionate professional seeking for a growth opportunity within a meritocratic organization. My background in Electronics and Telecommunication Engineering has equipped me with the technical skills and problem-solving abilities necessary to excel in this field.
+description: B.Tech Electronics & Telecommunication Engineering Student | MIT Academy of Engineering
