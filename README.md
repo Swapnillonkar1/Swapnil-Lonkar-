@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,6 @@
   <title>Swapnil Lonkar | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
-    name="description"
-    content="Portfolio of Swapnil Lahu Lonkar – B.Tech Electronics & Telecommunication Engineering student with experience in AI/ML, Embedded Systems, Networking, and Cloud."
   />
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -646,7 +645,7 @@
         <div class="brand-logo">SL</div>
         <div class="brand-text">
           <span>Swapnil Lonkar</span>
-          <span>Electronics & Telecommunication</span>
+          <span>Electronics & Telecommunication Engineering</span>
         </div>
       </a>
       <nav class="nav-links">
@@ -665,7 +664,7 @@
     <section class="hero" id="about">
       <div>
         <h1 class="hero-heading">
-          Building with <span class="hero-gradient">Electronics, AI & Code.</span>
+          Building with <span class="hero-gradient">Electronics And Telecommunication</span>
         </h1>
         <p class="hero-subtitle">
           I’m <strong>Swapnil Lahu Lonkar</strong>, a B.Tech Electronics & Telecommunication student at
@@ -715,7 +714,7 @@
           <div class="metrics">
             <div class="metric-card">
               <div class="metric-label">CGPA</div>
-              <div class="metric-value">6.98 / 10</div>
+              <div class="metric-value">7.0 / 10</div>
             </div>
             <div class="metric-card">
               <div class="metric-label">Internships</div>
@@ -737,7 +736,7 @@
           </div>
 
           <div class="hero-footer-text">
-            <span>Open to internships & project collaborations.</span>
+            <span>For Contact</span>
             <div class="hero-socials">
               <a
                 href="mailto:202301070187@mitaoe.ac.in"
@@ -763,7 +762,6 @@
     <section id="education">
       <div class="section-header">
         <h2 class="section-title">Education</h2>
-        <p class="section-subtitle">My academic journey so far.</p>
       </div>
 
       <div class="grid-two">
@@ -780,7 +778,7 @@
             <span class="badge">Current</span>
           </div>
           <div class="card-body">
-            CGPA: <strong>6.98 / 10</strong>  
+            CGPA: <strong>7.0 / 10</strong>  
             Focus areas: Communication systems, embedded systems, AI/ML & networking.
           </div>
         </article>
@@ -1190,41 +1188,10 @@
           </p>
         </div>
 
-        <div class="card">
-          <div class="skill-category-title" style="margin-bottom: 8px;">
-            Quick Message Template
-          </div>
-          <p style="font-size: 12px; color: var(--muted); margin-bottom: 8px;">
-            You can copy-paste this while emailing me:
-          </p>
-          <pre
-            style="
-              background: #020617;
-              border-radius: 12px;
-              padding: 10px;
-              font-size: 11px;
-              color: #e5e7eb;
-              overflow-x: auto;
-              border: 1px solid var(--border);
-            "
-          >Subject: Opportunity for Collaboration / Internship
-
-Hi Swapnil,
-
-I came across your portfolio and was impressed by your work in AI/ML, embedded systems and networking.
-
-I’d like to connect with you regarding a potential opportunity / project in [briefly describe area].
-
-Looking forward to hearing from you.
-
-Thanks,
-Swapnil</pre>
-        </div>
-      </div>
-    </section>
+        
 
     <footer>
-      <span>© <span id="year"></span> Swapnil Lahu Lonkar</span>
+      <span>© <span id="2025"></span> Swapnil Lahu Lonkar</span>
     </footer>
   </main>
 
