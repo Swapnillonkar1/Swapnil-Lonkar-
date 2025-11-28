@@ -1,5 +1,3 @@
-remote_theme: pages-themes/hacker@v0.2.0
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
 title: Swapnil Lahu Lonkar
+theme: jekyll-theme-minimal
 description: I am Swapnil Lonkar and I am pursuing my B.Tech in Electronics and Telecommunication Engineering from MIT Academy of Engineering. I am a voracious reader and the hobby has honed my ability to learn new concepts and develop insightful and mindful outcomes. I am a very hardworking, optimistic and passionate professional seeking for a growth opportunity within a meritocratic organization. My background in Electronics and Telecommunication Engineering has equipped me with the technical skills and problem-solving abilities necessary to excel in this field.
