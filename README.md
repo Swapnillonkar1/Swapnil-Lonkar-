@@ -1209,15 +1209,28 @@
             "
           >Subject: Opportunity for Collaboration / Internship
 
+Hi Swapnil,
+
+I came across your portfolio and was impressed by your work in AI/ML, embedded systems and networking.
+
+I’d like to connect with you regarding a potential opportunity / project in [briefly describe area].
+
+Looking forward to hearing from you.
+
+Thanks,
+Swapnil</pre>
+        </div>
+      </div>
+    </section>
+
     <footer>
       <span>© <span id="year"></span> Swapnil Lahu Lonkar</span>
-      <span>Built with HTML & CSS · Hosted on GitHub Pages</span>
     </footer>
   </main>
 
   <script>
     // Set current year in footer
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("2025").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
