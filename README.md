@@ -1,503 +1,475 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Swapnil Lonkar | Electronics & Embedded Systems Portfolio</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Swapnil Lahu Lonkar | Engineering Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --bg: #050816;
-  --bg-alt: #0b1020;
-  --card: #111827;
-  --accent: #38bdf8;
-  --purple: #a855f7;
-  --text: #e5e7eb;
-  --muted: #9ca3af;
-  --border: #263449;
-  --radius: 18px;
+    --bg: #07111f;
+    --panel: #0d1b2c;
+    --panel2: #102238;
+    --line: #20364d;
+    --cyan: #48d7f4;
+    --violet: #a78bfa;
+    --white: #edf5ff;
+    --muted: #a5b5c8;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: radial-gradient(circle at top, #17243a, #050816 55%, #02040a);
-  color: var(--text);
-  line-height: 1.7;
+    font-family: "DM Sans", sans-serif;
+    background: radial-gradient(ellipse at 75% 0%, #173653 0%, var(--bg) 48%);
+    color: var(--white);
+    line-height: 1.7;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    color: inherit;
+    text-decoration: none;
 }
 
 .container {
-  max-width: 1150px;
-  margin: auto;
-  padding: 25px 20px;
+    width: min(1120px, calc(100% - 40px));
+    margin: auto;
 }
 
-/* NAVBAR */
-
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: rgba(5,8,22,0.92);
-  backdrop-filter: blur(15px);
-  border-bottom: 1px solid var(--border);
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #07111fef;
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--line);
 }
 
-.nav-inner {
-  max-width: 1150px;
-  margin: auto;
-  padding: 14px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.nav {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.logo {
-  font-size: 23px;
-  font-weight: 800;
-  color: var(--accent);
+.brand {
+    font: 700 23px "Space Grotesk";
+    color: var(--cyan);
 }
 
-.nav-links {
-  display: flex;
-  gap: 22px;
-  flex-wrap: wrap;
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.nav-links a {
-  font-size: 13px;
-  color: var(--muted);
-  transition: 0.3s;
+nav a {
+    font-size: 13px;
+    color: var(--muted);
 }
 
-.nav-links a:hover {
-  color: var(--accent);
+nav a:hover {
+    color: var(--cyan);
 }
 
 /* HERO */
 
 .hero {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 45px;
-  align-items: center;
-  padding-top: 65px;
+    display: grid;
+    grid-template-columns: 1.45fr .8fr;
+    gap: 45px;
+    align-items: center;
+    padding: 90px 0 55px;
 }
 
-.intro {
-  color: var(--accent);
-  font-size: 14px;
-  font-weight: 600;
+.eyebrow {
+    color: var(--cyan);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
-.hero h1 {
-  font-size: clamp(32px, 5vw, 53px);
-  line-height: 1.25;
-  margin: 12px 0;
+h1, h2, h3 {
+    font-family: "Space Grotesk", sans-serif;
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: clamp(38px, 6vw, 66px);
+    margin: 14px 0;
 }
 
 .gradient {
-  background: linear-gradient(90deg, #38bdf8, #a855f7);
-  color: transparent;
-  background-clip: text;
+    background: linear-gradient(100deg, var(--cyan), var(--violet));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
-.hero h3 {
-  color: var(--muted);
-  font-size: 19px;
-  font-weight: 400;
-  margin-bottom: 15px;
+.role {
+    font-size: 19px;
+    color: #c5d5e7;
+    margin-bottom: 18px;
 }
 
-.hero p {
-  font-size: 14px;
-  color: var(--muted);
-  max-width: 650px;
+.lead {
+    max-width: 680px;
+    color: var(--muted);
+    font-size: 15px;
 }
 
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin: 22px 0;
+.tags, .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin: 22px 0;
 }
 
-.tag {
-  padding: 6px 12px;
-  border: 1px solid var(--border);
-  border-radius: 30px;
-  font-size: 11px;
-  color: var(--accent);
-  background: #111827;
+.tag, .chip {
+    font-size: 11px;
+    border: 1px solid var(--line);
+    border-radius: 30px;
+    padding: 6px 11px;
+    color: #c9d9e9;
+    background: #0b1a2a;
 }
 
 .actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin: 22px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 25px 0;
 }
 
 .btn {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-size: 13px;
-  font-weight: 600;
-  transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 18px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    transition: .2s;
 }
 
-.btn-primary {
-  color: #07111f;
-  background: linear-gradient(120deg, #38bdf8, #818cf8);
+.primary {
+    background: linear-gradient(110deg, var(--cyan), #9b9cfb);
+    color: #07111f;
 }
 
-.btn-outline {
-  border: 1px solid var(--accent);
-  color: var(--accent);
+.secondary {
+    border: 1px solid #3d6683;
+    color: var(--cyan);
 }
 
 .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px #38bdf844;
+    transform: translateY(-3px);
+}
+
+/* PROFILE CARD */
+
+.hero-card, .card {
+    background: linear-gradient(145deg, #10243a, #0b1727);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    box-shadow: 0 18px 50px #0003;
 }
 
 .hero-card {
-  background: linear-gradient(145deg, #16263c, #101525);
-  border: 1px solid var(--border);
-  border-radius: 25px;
-  padding: 30px;
-  text-align: center;
-  box-shadow: 0 20px 50px #0008;
+    padding: 28px;
+    text-align: center;
 }
 
 .avatar {
-  width: 115px;
-  height: 115px;
-  margin: 0 auto 18px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 38px;
-  font-weight: 700;
-  color: #07111f;
-  background: linear-gradient(135deg, #38bdf8, #a855f7);
-  border: 4px solid #263449;
+    height: 112px;
+    width: 112px;
+    margin: 0 auto 17px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, var(--cyan), var(--violet));
+    color: #081321;
+    font: 700 38px "Space Grotesk";
+    border: 5px solid #1b3852;
 }
 
 .hero-card h2 {
-  font-size: 21px;
+    font-size: 20px;
 }
 
 .hero-card p {
-  font-size: 12px;
-  color: var(--muted);
-  margin: 5px 0 18px;
+    color: var(--muted);
+    font-size: 12px;
+    margin: 5px 0 20px;
 }
 
-.metrics {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+.stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
 
-.metric {
-  background: #0b1020;
-  border: 1px solid var(--border);
-  border-radius: 13px;
-  padding: 14px;
+.stat {
+    background: #081625;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 13px;
 }
 
-.metric h3 {
-  color: var(--accent);
-  font-size: 22px;
+.stat strong {
+    display: block;
+    color: var(--cyan);
+    font: 700 24px "Space Grotesk";
 }
 
-.metric span {
-  font-size: 11px;
-  color: var(--muted);
+.stat span {
+    font-size: 11px;
+    color: var(--muted);
 }
 
-/* GENERAL SECTIONS */
+/* SECTIONS */
 
 section {
-  margin-top: 75px;
-  scroll-margin-top: 85px;
+    padding: 48px 0 8px;
 }
 
-.section-heading {
-  margin-bottom: 25px;
+.section-head {
+    margin-bottom: 22px;
 }
 
-.section-heading h2 {
-  font-size: 26px;
-  margin-bottom: 5px;
+.section-head h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
 }
 
-.section-heading h2 span {
-  color: var(--accent);
+.section-head h2 span {
+    color: var(--cyan);
 }
 
-.section-heading p {
-  font-size: 12px;
-  color: var(--muted);
-}
-
-.grid-two {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
+.section-head p, .muted {
+    font-size: 13px;
+    color: var(--muted);
 }
 
 .card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 22px;
-  transition: 0.3s;
+    padding: 22px;
+    transition: .25s;
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  border-color: var(--accent);
-  box-shadow: 0 12px 30px #0005;
+    transform: translateY(-4px);
+    border-color: #3b7796;
 }
 
 .card h3 {
-  font-size: 15px;
-  margin-bottom: 5px;
+    font-size: 17px;
+    margin-bottom: 5px;
 }
 
 .meta {
-  color: var(--accent);
-  font-size: 11px;
-  margin-bottom: 10px;
+    font-size: 12px;
+    color: var(--cyan);
+    margin-bottom: 11px;
 }
 
 .card p {
-  font-size: 12px;
-  color: var(--muted);
+    font-size: 13px;
+    color: var(--muted);
 }
 
 .card ul {
-  padding-left: 18px;
-  margin-top: 8px;
+    padding-left: 18px;
+    margin-top: 9px;
 }
 
 .card li {
-  font-size: 12px;
-  color: var(--muted);
-  margin-bottom: 5px;
+    font-size: 13px;
+    color: var(--muted);
+    margin: 4px 0;
 }
 
-.badge {
-  display: inline-block;
-  padding: 4px 10px;
-  border: 1px solid #38bdf855;
-  color: var(--accent);
-  border-radius: 30px;
-  font-size: 10px;
-  margin-top: 12px;
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 17px;
 }
 
-/* INTERNSHIPS */
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 17px;
+}
 
-.internship-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
+.pill {
+    display: inline-block;
+    margin-top: 13px;
+    padding: 4px 10px;
+    border: 1px solid #2f627d;
+    border-radius: 30px;
+    color: var(--cyan);
+    font-size: 10px;
 }
 
 /* SKILLS */
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+.skill-card h3 {
+    font-size: 15px;
 }
 
-.skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 12px;
-}
-
-.skill-tags span {
-  background: #0b1020;
-  border: 1px solid var(--border);
-  padding: 5px 10px;
-  border-radius: 30px;
-  font-size: 11px;
-  color: #cbd5e1;
-}
-
-/* PROJECTS */
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.project-number {
-  color: var(--accent);
-  font-size: 25px;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.project-link {
-  display: inline-block;
-  color: var(--accent);
-  font-size: 12px;
-  margin-top: 15px;
-}
-
-.project-link:hover {
-  color: #c084fc;
+.skill-card .chips {
+    margin-bottom: 0;
 }
 
 /* CERTIFICATIONS */
 
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+.cert-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.cert {
+    padding: 16px 18px;
+    border-radius: 14px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+}
+
+.cert strong {
+    display: block;
+    font-size: 13px;
+}
+
+.cert span {
+    font-size: 11px;
+    color: var(--muted);
 }
 
 /* CONTACT */
 
-.contact-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
 }
 
-.contact-item {
-  margin: 14px 0;
-  color: var(--muted);
-  font-size: 13px;
-  overflow-wrap: anywhere;
+.contact-line {
+    margin: 12px 0;
+    color: var(--muted);
+    font-size: 13px;
+    overflow-wrap: anywhere;
 }
 
-.contact-item strong {
-  color: var(--accent);
+.contact-line b {
+    color: var(--cyan);
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .socials {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
 }
 
 .socials a {
-  padding: 8px 14px;
-  border: 1px solid var(--border);
-  border-radius: 25px;
-  color: var(--accent);
-  font-size: 12px;
+    border: 1px solid var(--line);
+    border-radius: 30px;
+    padding: 8px 13px;
+    color: var(--cyan);
+    font-size: 12px;
 }
-
-.socials a:hover {
-  background: #38bdf822;
-}
-
-/* FOOTER */
 
 footer {
-  margin-top: 70px;
-  padding: 25px 10px;
-  text-align: center;
-  border-top: 1px solid var(--border);
-  color: var(--muted);
-  font-size: 12px;
+    margin-top: 65px;
+    padding: 25px 0;
+    border-top: 1px solid var(--line);
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
 }
 
 /* RESPONSIVE */
 
-@media(max-width: 850px) {
-  .hero {
-    grid-template-columns: 1fr;
-  }
+@media(max-width:800px) {
+    .hero {
+        grid-template-columns: 1fr;
+        padding-top: 55px;
+    }
 
-  .hero-card {
-    max-width: 450px;
-    width: 100%;
-    margin: auto;
-  }
+    .hero-card {
+        max-width: 420px;
+        width: 100%;
+        margin: auto;
+    }
 
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .grid3 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
-@media(max-width: 650px) {
-  .nav-inner {
-    flex-direction: column;
-    gap: 12px;
-  }
+@media(max-width:620px) {
+    .nav {
+        padding: 14px 0;
+        align-items: flex-start;
+        flex-direction: column;
+    }
 
-  .nav-links {
-    justify-content: center;
-    gap: 12px;
-  }
+    nav {
+        gap: 12px;
+    }
 
-  .grid-two,
-  .internship-grid,
-  .projects-grid,
-  .cert-grid,
-  .contact-box,
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
+    .grid2, .grid3, .cert-list, .contact-grid {
+        grid-template-columns: 1fr;
+    }
 
-  .hero {
-    padding-top: 35px;
-  }
+    .section-head h2 {
+        font-size: 25px;
+    }
 
-  section {
-    margin-top: 55px;
-  }
+    .container {
+        width: min(100% - 28px, 1120px);
+    }
 }
 </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+<header>
+<div class="container nav">
 
-<nav class="navbar">
-  <div class="nav-inner">
-    <a href="#home" class="logo">SL.</a>
+<a class="brand" href="#home">SL.</a>
 
-    <div class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#internships">Internships</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
+<nav>
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#internships">Internships</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#certifications">Certifications</a>
+<a href="#contact">Contact</a>
 </nav>
+
+</div>
+</header>
 
 <main class="container">
 
@@ -505,75 +477,94 @@ footer {
 
 <section class="hero" id="home">
 
-  <div>
-    <div class="intro">WELCOME TO MY PORTFOLIO</div>
+<div>
 
-    <h1>
-      Hi, I'm <span class="gradient">Swapnil Lonkar</span>
-    </h1>
+<div class="eyebrow">Electronics • Embedded • Hardware</div>
 
-    <h3>Electronics & Telecommunication Engineer</h3>
+<h1>
+Hi, I'm
+<span class="gradient">Swapnil Lahu Lonkar</span>
+</h1>
 
-    <p>
-      Motivated Electronics and Telecommunication Engineering student
-      with knowledge of Embedded Systems, STM32, C programming,
-      and Edge AI. Interested in hardware development, firmware
-      programming, circuit design and real-time embedded applications.
-    </p>
+<div class="role">
+B.Tech – Electronics & Telecommunication Engineering
+</div>
 
-    <div class="tags">
-      <span class="tag">B.Tech 2023–2027</span>
-      <span class="tag">Embedded Systems</span>
-      <span class="tag">STM32</span>
-      <span class="tag">Embedded C</span>
-      <span class="tag">Hardware Development</span>
-      <span class="tag">Edge AI</span>
-    </div>
+<p class="lead">
+Motivated Electronics and Telecommunication Engineering student
+with knowledge of Embedded Systems, STM32, C programming and
+Edge AI. Seeking opportunities in hardware and embedded domains
+to apply technical skills in firmware development, circuit design
+and real-time system applications.
+</p>
 
-    <div class="actions">
-      <a href="#projects" class="btn btn-primary">Explore Projects →</a>
+<div class="tags">
+<span class="tag">B.Tech 2023–2027</span>
+<span class="tag">Embedded Systems</span>
+<span class="tag">STM32</span>
+<span class="tag">Embedded C</span>
+<span class="tag">PCB Basics</span>
+<span class="tag">Sensors & Interfacing</span>
+</div>
 
-      <a href="https://www.linkedin.com/in/swapnil-lonkar-5304a6283"
-         target="_blank" class="btn btn-outline">
-        LinkedIn Profile
-      </a>
-    </div>
+<div class="actions">
 
-    <p>
-      📧 swapnillonkar0606@gmail.com
-      <br>
-      📍 Ahilyanagar, Maharashtra, India
-    </p>
-  </div>
+<a class="btn primary" href="#projects">
+Explore My Projects ↗
+</a>
 
-  <div class="hero-card">
-    <div class="avatar">SL</div>
+<a class="btn secondary"
+href="https://www.linkedin.com/in/swapnil-lonkar-5304a6283"
+target="_blank">
+Connect on LinkedIn
+</a>
 
-    <h2>Swapnil Lahu Lonkar</h2>
-    <p>B.Tech – Electronics & Telecommunication</p>
+<a class="btn secondary"
+href="mailto:swapnillonkar0606@gmail.com">
+Email Me
+</a>
 
-    <div class="metrics">
-      <div class="metric">
-        <h3>7.31</h3>
-        <span>CGPA / 10</span>
-      </div>
+</div>
 
-      <div class="metric">
-        <h3>03</h3>
-        <span>Internships</span>
-      </div>
+<p class="muted">
+Ahilyanagar, Maharashtra, India · +91 84830 40612
+</p>
 
-      <div class="metric">
-        <h3>05</h3>
-        <span>Projects</span>
-      </div>
+</div>
 
-      <div class="metric">
-        <h3>2027</h3>
-        <span>Graduation</span>
-      </div>
-    </div>
-  </div>
+<aside class="hero-card">
+
+<div class="avatar">SL</div>
+
+<h2>Swapnil Lahu Lonkar</h2>
+
+<p>MIT Academy of Engineering, Pune</p>
+
+<div class="stats">
+
+<div class="stat">
+<strong>7.31</strong>
+<span>CGPA / 10</span>
+</div>
+
+<div class="stat">
+<strong>03</strong>
+<span>Internship Programs</span>
+</div>
+
+<div class="stat">
+<strong>04</strong>
+<span>Academic Projects</span>
+</div>
+
+<div class="stat">
+<strong>2027</strong>
+<span>Expected Graduation</span>
+</div>
+
+</div>
+
+</aside>
 
 </section>
 
@@ -581,33 +572,30 @@ footer {
 
 <section id="about">
 
-  <div class="section-heading">
-    <h2>About <span>Me</span></h2>
-    <p>Introduction and professional interests</p>
-  </div>
+<div class="section-head">
+<h2>About <span>Me</span></h2>
+<p>Professional profile and areas of interest</p>
+</div>
 
-  <div class="card">
-    <h3>Electronics | Embedded Systems | Hardware</h3>
+<div class="card">
 
-    <p>
-      I am Swapnil Lahu Lonkar, pursuing B.Tech in Electronics
-      and Telecommunication Engineering at MIT Academy of Engineering,
-      Pune.
+<h3>Building practical solutions with electronics and embedded technology</h3>
 
-      I have developed technical knowledge in C Programming,
-      C++, Python, Embedded C, PCB Basics, Sensors and Interfacing.
+<p>
+I am pursuing a B.Tech in Electronics and Telecommunication
+Engineering at MIT Academy of Engineering, Pune. My technical
+interests include embedded systems, microcontroller programming,
+hardware development, circuit design and sensor interfacing.
+Through academic projects, workshops and internship programs,
+I continue to develop my technical foundation, teamwork and
+problem-solving skills.
+</p>
 
-      I am interested in developing hardware-oriented solutions,
-      embedded applications, firmware development and intelligent
-      electronic systems.
+<span class="pill">
+Interested in Hardware & Embedded Opportunities
+</span>
 
-      My academic projects and internship experiences have helped
-      me improve my technical knowledge, teamwork, problem-solving
-      and professional communication skills.
-    </p>
-
-    <span class="badge">Aspiring Embedded Systems Engineer</span>
-  </div>
+</div>
 
 </section>
 
@@ -615,36 +603,48 @@ footer {
 
 <section id="education">
 
-  <div class="section-heading">
-    <h2>My <span>Education</span></h2>
-    <p>Academic qualifications</p>
-  </div>
+<div class="section-head">
+<h2>My <span>Education</span></h2>
+<p>Academic qualifications</p>
+</div>
 
-  <div class="grid-two">
+<div class="grid2">
 
-    <div class="card">
-      <h3>MIT Academy of Engineering, Pune</h3>
-      <div class="meta">2023 – 2027 | B.Tech</div>
-      <p>Electronics and Telecommunication Engineering</p>
-      <p><strong>CGPA: 7.31 / 10</strong></p>
-      <span class="badge">Currently Pursuing</span>
-    </div>
+<article class="card">
 
-    <div class="card">
-      <h3>Sahyadri International Junior College</h3>
-      <div class="meta">2023 | 12th Standard</div>
-      <p>MSBSHSE</p>
-      <p><strong>Percentage: 71.67%</strong></p>
-    </div>
+<h3>MIT Academy of Engineering, Pune</h3>
 
-    <div class="card">
-      <h3>Residential High School</h3>
-      <div class="meta">2021 | 10th Standard</div>
-      <p>MSBSHSE</p>
-      <p><strong>Percentage: 86.40%</strong></p>
-    </div>
+<div class="meta">2023 – 2027 · B.Tech</div>
 
-  </div>
+<p>Electronics and Telecommunication Engineering</p>
+
+<p><b>CGPA: 7.31 / 10</b></p>
+
+<span class="pill">Currently Pursuing</span>
+
+</article>
+
+<article class="card">
+
+<h3>Sahyadri International Junior College, Ahilyanagar</h3>
+
+<div class="meta">2023 · 12th Standard · MSBSHSE</div>
+
+<p><b>Percentage: 71.67 / 100</b></p>
+
+</article>
+
+<article class="card">
+
+<h3>Residential High School, Ahilyanagar</h3>
+
+<div class="meta">2021 · 10th Standard · MSBSHSE</div>
+
+<p><b>Percentage: 86.40 / 100</b></p>
+
+</article>
+
+</div>
 
 </section>
 
@@ -652,62 +652,81 @@ footer {
 
 <section id="internships">
 
-  <div class="section-heading">
-    <h2>Internships & <span>Experience</span></h2>
-    <p>Virtual internship programs and technical experience</p>
-  </div>
+<div class="section-head">
+<h2>Internships & <span>Programs</span></h2>
+<p>Internship and technology learning experience</p>
+</div>
 
-  <div class="internship-grid">
+<div class="grid2">
 
-    <div class="card">
-      <h3>Cisco Networking Academy</h3>
-      <div class="meta">01 June 2025 – 30 August 2025</div>
-      <p><strong>Cisco AICTE Virtual Internship Program 2025</strong></p>
-      <p>
-        Gained knowledge of computer networking, networking
-        fundamentals, network security and LAN/WAN technologies.
-      </p>
-      <div class="skill-tags">
-        <span>Computer Networking</span>
-        <span>Network Security</span>
-        <span>LAN & WAN</span>
-      </div>
-      <span class="badge">Networking</span>
-    </div>
+<article class="card">
 
-    <div class="card">
-      <h3>Edunet Foundation</h3>
-      <div class="meta">15 July 2025 – 07 August 2025</div>
-      <p><strong>SkillsBuild & IBM Cloud Platform in Emerging Technologies (AI & Cloud)</strong></p>
-      <p>
-        Developed knowledge of data analytics, cloud computing,
-        IBM Cloud and artificial intelligence.
-      </p>
-      <div class="skill-tags">
-        <span>Data Analytics</span>
-        <span>IBM Cloud</span>
-        <span>Artificial Intelligence</span>
-      </div>
-      <span class="badge">AI & Cloud</span>
-    </div>
+<h3>Cisco Networking Academy</h3>
 
-    <div class="card">
-      <h3>Eduskills</h3>
-      <div class="meta">01 July 2024 – 30 September 2024</div>
-      <p><strong>Android Developer</strong></p>
-      <p>
-        Developed knowledge of Android development,
-        mobile application development and UI/UX design.
-      </p>
-      <div class="skill-tags">
-        <span>Android Development</span>
-        <span>Mobile Applications</span>
-        <span>UI/UX Design</span>
-      </div>
-      <span class="badge">Android Development</span>
-    </div>
+<div class="meta">01 June 2025 – 30 August 2025</div>
 
-  </div>
+<p><b>Cisco AICTE Virtual Internship Program 2025</b></p>
+
+<p>
+Developed knowledge of computer networking, networking
+fundamentals, network security and LAN/WAN technologies.
+</p>
+
+<div class="chips">
+<span class="chip">Computer Networking</span>
+<span class="chip">Network Security</span>
+<span class="chip">LAN & WAN</span>
+</div>
+
+</article>
+
+<article class="card">
+
+<h3>Edunet Foundation</h3>
+
+<div class="meta">15 July 2025 – 07 August 2025</div>
+
+<p>
+<b>SkillsBuild & IBM Cloud Platform in Emerging Technologies
+(AI & Cloud)</b>
+</p>
+
+<p>
+Explored data analytics, cloud computing, IBM Cloud and
+artificial intelligence.
+</p>
+
+<div class="chips">
+<span class="chip">Data Analytics</span>
+<span class="chip">Cloud Computing</span>
+<span class="chip">IBM Cloud</span>
+<span class="chip">AI</span>
+</div>
+
+</article>
+
+<article class="card">
+
+<h3>Eduskills</h3>
+
+<div class="meta">01 July 2024 – 30 September 2024</div>
+
+<p><b>Android Developer</b></p>
+
+<p>
+Built foundational knowledge in Android and mobile application
+development, UI/UX design for mobile apps and problem solving.
+</p>
+
+<div class="chips">
+<span class="chip">Android Development</span>
+<span class="chip">Mobile Apps</span>
+<span class="chip">UI/UX</span>
+</div>
+
+</article>
+
+</div>
 
 </section>
 
@@ -715,74 +734,90 @@ footer {
 
 <section id="skills">
 
-  <div class="section-heading">
-    <h2>Technical <span>Skills</span></h2>
-    <p>My technical knowledge and expertise</p>
-  </div>
+<div class="section-head">
+<h2>Technical <span>Expertise</span></h2>
+<p>Skills and technologies</p>
+</div>
 
-  <div class="skills-grid">
+<div class="grid3">
 
-    <div class="card">
-      <h3>Programming Languages</h3>
-      <div class="skill-tags">
-        <span>C Programming</span>
-        <span>C++ Programming</span>
-        <span>Python</span>
-        <span>Embedded C</span>
-      </div>
-    </div>
+<article class="card skill-card">
 
-    <div class="card">
-      <h3>Embedded Systems</h3>
-      <div class="skill-tags">
-        <span>STM32</span>
-        <span>Microcontrollers</span>
-        <span>Sensor Interfacing</span>
-        <span>Real-Time Systems</span>
-      </div>
-    </div>
+<h3>Programming</h3>
 
-    <div class="card">
-      <h3>Electronics & Hardware</h3>
-      <div class="skill-tags">
-        <span>PCB Basics</span>
-        <span>Basic Electronics</span>
-        <span>Circuit Design</span>
-        <span>Sensor Integration</span>
-      </div>
-    </div>
+<div class="chips">
+<span class="chip">C Programming</span>
+<span class="chip">C++ Programming</span>
+<span class="chip">Python Programming</span>
+<span class="chip">Embedded C</span>
+</div>
 
-    <div class="card">
-      <h3>Communication Systems</h3>
-      <div class="skill-tags">
-        <span>Digital Communication</span>
-        <span>Wireless Communication</span>
-        <span>Satellite Communication</span>
-        <span>Networking</span>
-      </div>
-    </div>
+</article>
 
-    <div class="card">
-      <h3>Software & Tools</h3>
-      <div class="skill-tags">
-        <span>MATLAB</span>
-        <span>Simulink</span>
-        <span>Arduino</span>
-        <span>IBM Cloud</span>
-      </div>
-    </div>
+<article class="card skill-card">
 
-    <div class="card">
-      <h3>Professional Skills</h3>
-      <div class="skill-tags">
-        <span>Problem Solving</span>
-        <span>Teamwork</span>
-        <span>Communication</span>
-        <span>Adaptability</span>
-      </div>
-    </div>
+<h3>Embedded & Electronics</h3>
 
-  </div>
+<div class="chips">
+<span class="chip">STM32</span>
+<span class="chip">PCB Basics</span>
+<span class="chip">Sensors & Interfacing</span>
+<span class="chip">Microcontrollers</span>
+</div>
+
+</article>
+
+<article class="card skill-card">
+
+<h3>Communication Systems</h3>
+
+<div class="chips">
+<span class="chip">Digital Communication</span>
+<span class="chip">Satellite Communication</span>
+<span class="chip">Wireless Communication</span>
+</div>
+
+</article>
+
+<article class="card skill-card">
+
+<h3>Networking & Security</h3>
+
+<div class="chips">
+<span class="chip">Computer Networking</span>
+<span class="chip">Network Security</span>
+<span class="chip">LAN & WAN</span>
+</div>
+
+</article>
+
+<article class="card skill-card">
+
+<h3>Tools & Platforms</h3>
+
+<div class="chips">
+<span class="chip">MATLAB</span>
+<span class="chip">Simulink</span>
+<span class="chip">Arduino</span>
+<span class="chip">IBM Cloud</span>
+</div>
+
+</article>
+
+<article class="card skill-card">
+
+<h3>Professional Skills</h3>
+
+<div class="chips">
+<span class="chip">Problem Solving</span>
+<span class="chip">Teamwork</span>
+<span class="chip">Communication</span>
+<span class="chip">Interview Preparation</span>
+</div>
+
+</article>
+
+</div>
 
 </section>
 
@@ -790,122 +825,137 @@ footer {
 
 <section id="projects">
 
-  <div class="section-heading">
-    <h2>Academic <span>Projects</span></h2>
-    <p>Engineering projects and practical implementations</p>
-  </div>
+<div class="section-head">
+<h2>Academic <span>Projects</span></h2>
+<p>Projects included in my updated resume</p>
+</div>
 
-  <div class="projects-grid">
+<div class="grid2">
 
-    <div class="card">
-      <div class="project-number">01</div>
-      <h3>Digital Wireless Communication Link over Satellite Using Simulink</h3>
-      <div class="meta">01 March 2025 – 30 April 2025</div>
-      <p>
-        Developed a simulation-based digital wireless communication
-        link over the GSAT-31 satellite using MATLAB and Simulink.
-        The project focuses on satellite communication and
-        communication system performance evaluation.
-      </p>
-      <p><strong>Mentor:</strong> Prof. Vipin Yadav</p>
-      <p><strong>Team Size:</strong> 4</p>
-      <div class="skill-tags">
-        <span>MATLAB</span>
-        <span>Simulink</span>
-        <span>Digital Communication</span>
-        <span>GSAT-31</span>
-      </div>
-      <a class="project-link"
-         href="https://drive.google.com/file/d/1jTvDosoLyYf_YAJYFBIQHs1KAvqEODDz/view?usp=drivesdk"
-         target="_blank">View Project →</a>
-    </div>
+<article class="card">
 
-    <div class="card">
-      <div class="project-number">02</div>
-      <h3>Automatic Wiper for Automobiles Using Rain Sensor and Arduino</h3>
-      <div class="meta">15 February 2025 – 01 April 2025</div>
-      <p>
-        Worked on an automatic automobile wiper system using
-        a rain sensor and Arduino. The project focuses on
-        sensor integration, microcontroller programming and
-        real-time system design.
-      </p>
-      <p><strong>Mentor:</strong> Prof. Nutan Bansode</p>
-      <p><strong>Team Size:</strong> 4</p>
-      <div class="skill-tags">
-        <span>Arduino</span>
-        <span>Rain Sensor</span>
-        <span>Microcontroller</span>
-        <span>Signal Processing</span>
-      </div>
-      <a class="project-link"
-         href="https://drive.google.com/drive/folders/1ZFIdEfJZ6wqCUmMwtMJo1w4aWWWvq-w5"
-         target="_blank">View Project →</a>
-    </div>
+<h3>01 · Digital Wireless Communication Link over Satellite Using Simulink</h3>
 
-    <div class="card">
-      <div class="project-number">03</div>
-      <h3>Smart Traffic Management System</h3>
-      <div class="meta">30 August 2024 – 25 December 2024</div>
-      <p>
-        Worked on a smart traffic management project
-        focusing on IoT systems, traffic management,
-        microcontroller programming and real-time data processing.
-      </p>
-      <p><strong>Mentor:</strong> Prof. Nutan Bansode</p>
-      <p><strong>Team Size:</strong> 4</p>
-      <div class="skill-tags">
-        <span>IoT Systems</span>
-        <span>Smart Traffic</span>
-        <span>Microcontrollers</span>
-        <span>Real-Time Processing</span>
-      </div>
-      <a class="project-link"
-         href="https://drive.google.com/drive/folders/1Fej62i8V13O6EB6N0vvMSRivDZDA1XJ4"
-         target="_blank">View Project →</a>
-    </div>
+<div class="meta">01 March 2025 – 30 April 2025</div>
 
-    <div class="card">
-      <div class="project-number">04</div>
-      <h3>Automatic Plant Watering System</h3>
-      <div class="meta">10 January 2024 – 21 May 2024</div>
-      <p>
-        Worked on an automatic plant watering system
-        focusing on Arduino programming, microcontroller
-        programming, automation systems and circuit design.
-      </p>
-      <p><strong>Mentor:</strong> Dr. Mahesh Gouder</p>
-      <p><strong>Team Size:</strong> 3</p>
-      <div class="skill-tags">
-        <span>Arduino</span>
-        <span>Automation</span>
-        <span>Microcontrollers</span>
-        <span>Circuit Design</span>
-      </div>
-      <a class="project-link"
-         href="https://drive.google.com/drive/folders/1d2wSnKWCJ7j3pSnfPgo4NNGKGXvYk50k"
-         target="_blank">View Project →</a>
-    </div>
+<p>
+Simulation-based project focused on a digital wireless
+communication link over the GSAT-31 satellite and communication
+system performance evaluation.
+</p>
 
-    <div class="card">
-      <div class="project-number">05</div>
-      <h3>Hardware and Electronics Practical Work</h3>
-      <div class="meta">Technical Workshop Experience</div>
-      <p>
-        Participated in electronics workshops involving
-        basic electronics, circuit prototyping,
-        microcontroller basics and sensor interfacing
-        at MIT Academy of Engineering, Pune.
-      </p>
-      <div class="skill-tags">
-        <span>Basic Electronics</span>
-        <span>Circuit Prototyping</span>
-        <span>Sensor Interfacing</span>
-      </div>
-      <span class="badge">Workshop Experience</span>
-    </div>
+<p style="margin-top:9px">
+Mentor: Prof. Vipin Yadav · Team size: 4
+</p>
 
-  </div>
+<div class="chips">
+<span class="chip">MATLAB</span>
+<span class="chip">Simulink</span>
+<span class="chip">Digital Communication</span>
+<span class="chip">GSAT-31</span>
+</div>
+
+<a class="project-link"
+href="https://drive.google.com/file/d/1jTvDosoLyYf_YAJYFBIQHs1KAvqEODDz/view?usp=drivesdk"
+target="_blank">
+View Project Documentation ↗
+</a>
+
+</article>
+
+<article class="card">
+
+<h3>02 · Automatic Wiper for Automobiles Using Rain Sensor and Arduino</h3>
+
+<div class="meta">15 February 2025 – 01 April 2025</div>
+
+<p>
+Project focused on automatic automobile wiper operation using
+a rain sensor and Arduino, with emphasis on sensor integration,
+microcontroller programming and real-time system design.
+</p>
+
+<p style="margin-top:9px">
+Mentor: Prof. Nutan Bansode · Team size: 4
+</p>
+
+<div class="chips">
+<span class="chip">Arduino</span>
+<span class="chip">Sensor Integration</span>
+<span class="chip">Real-Time Systems</span>
+<span class="chip">Signal Processing</span>
+</div>
+
+<a class="project-link"
+href="https://drive.google.com/drive/folders/1ZFIdEfJZ6wqCUmMwtMJo1w4aWWWvq-w5"
+target="_blank">
+View Project Files ↗
+</a>
+
+</article>
+
+<article class="card">
+
+<h3>03 · Smart Traffic Management System</h3>
+
+<div class="meta">30 August 2024 – 25 December 2024</div>
+
+<p>
+Project involving IoT systems, smart traffic management,
+microcontroller programming and real-time data processing.
+</p>
+
+<p style="margin-top:9px">
+Mentor: Prof. Nutan Bansode · Team size: 4
+</p>
+
+<div class="chips">
+<span class="chip">IoT Systems</span>
+<span class="chip">Traffic Management</span>
+<span class="chip">Microcontrollers</span>
+<span class="chip">Real-Time Data</span>
+</div>
+
+<a class="project-link"
+href="https://drive.google.com/drive/folders/1Fej62i8V13O6EB6N0vvMSRivDZDA1XJ4"
+target="_blank">
+View Project Files ↗
+</a>
+
+</article>
+
+<article class="card">
+
+<h3>04 · Automatic Plant Watering System</h3>
+
+<div class="meta">10 January 2024 – 21 May 2024</div>
+
+<p>
+Project focused on Arduino programming, microcontroller
+programming, automation systems and circuit design for an
+automatic plant watering application.
+</p>
+
+<p style="margin-top:9px">
+Mentor: Dr. Mahesh Gouder · Team size: 3
+</p>
+
+<div class="chips">
+<span class="chip">Arduino</span>
+<span class="chip">Microcontrollers</span>
+<span class="chip">Automation</span>
+<span class="chip">Circuit Design</span>
+</div>
+
+<a class="project-link"
+href="https://drive.google.com/drive/folders/1d2wSnKWCJ7j3pSnfPgo4NNGKGXvYk50k"
+target="_blank">
+View Project Files ↗
+</a>
+
+</article>
+
+</div>
 
 </section>
 
@@ -913,76 +963,68 @@ footer {
 
 <section id="certifications">
 
-  <div class="section-heading">
-    <h2>Certifications & <span>Training</span></h2>
-    <p>Additional learning and professional development</p>
-  </div>
+<div class="section-head">
+<h2>Certifications & <span>Training</span></h2>
+<p>Assessments, workshops and professional development</p>
+</div>
 
-  <div class="cert-grid">
+<div class="cert-list">
 
-    <div class="card">
-      <h3>AI Fluency for Nonprofits</h3>
-      <div class="meta">Provider: ANTHROP/C (as listed in resume)</div>
-    </div>
+<div class="cert">
+<strong>AI Fluency For Nonprofits</strong>
+<span>ANTHROP/C</span>
+</div>
 
-    <div class="card">
-      <h3>AI Fluency: Framework & Foundations</h3>
-      <div class="meta">Provider: ANTHROP/C (as listed in resume)</div>
-    </div>
+<div class="cert">
+<strong>AI Fluency: Framework & Foundations</strong>
+<span>ANTHROP/C</span>
+</div>
 
-    <div class="card">
-      <h3>AI Fluency for Students</h3>
-      <div class="meta">Provider: ANTHROP/C (as listed in resume)</div>
-    </div>
+<div class="cert">
+<strong>AI Fluency for Students</strong>
+<span>ANTHROP/C</span>
+</div>
 
-    <div class="card">
-      <h3>Claude 101</h3>
-      <div class="meta">Provider: ANTHROP/C (as listed in resume)</div>
-    </div>
+<div class="cert">
+<strong>Claude 101</strong>
+<span>ANTHROP/C</span>
+</div>
 
-  </div>
+</div>
 
-  <div class="section-heading" style="margin-top:30px;">
-    <h2>Seminars & <span>Workshops</span></h2>
-  </div>
+<div class="grid2" style="margin-top:17px">
 
-  <div class="grid-two">
+<article class="card">
 
-    <div class="card">
-      <h3>Electronic Workshop</h3>
-      <div class="meta">28 August 2023 – 30 November 2023</div>
-      <p>MIT Academy of Engineering, Pune</p>
-      <p>Basic Electronics, Circuit Prototyping, Microcontroller Basics and Sensor Interfacing.</p>
-    </div>
+<h3>Electronic Workshop</h3>
 
-    <div class="card">
-      <h3>CRPC Corporation</h3>
-      <div class="meta">20 September 2023 – 20 October 2023</div>
-      <p>MIT Academy of Engineering, Pune</p>
-      <p>Career Planning, Resume Building, Interview Preparation and Professional Communication.</p>
-    </div>
+<div class="meta">28 August 2023 – 30 November 2023</div>
 
-  </div>
+<p>MIT Academy of Engineering, Pune</p>
 
-</section>
+<p>
+Key skills: Basic Electronics, Circuit Prototyping,
+Microcontroller Basics and Sensor Interfacing.
+</p>
 
-<!-- INTERESTS -->
+</article>
 
-<section id="interests">
+<article class="card">
 
-  <div class="section-heading">
-    <h2>Personal <span>Interests</span></h2>
-  </div>
+<h3>CRPC Corporation</h3>
 
-  <div class="card">
-    <div class="skill-tags">
-      <span>Exploring New Technologies</span>
-      <span>Reading</span>
-      <span>Listening to Music</span>
-      <span>Playing Sports</span>
-      <span>Travelling</span>
-    </div>
-  </div>
+<div class="meta">20 September 2023 – 20 October 2023</div>
+
+<p>MIT Academy of Engineering, Pune</p>
+
+<p>
+Key skills: Career Planning, Resume Building,
+Interview Preparation and Professional Communication.
+</p>
+
+</article>
+
+</div>
 
 </section>
 
@@ -990,83 +1032,117 @@ footer {
 
 <section id="contact">
 
-  <div class="section-heading">
-    <h2>Let's <span>Connect</span></h2>
-    <p>Interested in engineering opportunities and collaboration</p>
-  </div>
+<div class="section-head">
+<h2>Let's <span>Connect</span></h2>
+<p>Open to connecting about engineering, hardware and embedded systems opportunities</p>
+</div>
 
-  <div class="contact-box">
+<div class="contact-grid">
 
-    <div class="card">
-      <h3>Contact Information</h3>
+<article class="card">
 
-      <div class="contact-item">
-        <strong>Email:</strong><br>
-        <a href="mailto:swapnillonkar0606@gmail.com">
-          swapnillonkar0606@gmail.com
-        </a>
-      </div>
+<h3>Contact Information</h3>
 
-      <div class="contact-item">
-        <strong>College Email:</strong><br>
-        <a href="mailto:202301070187@mitaoe.ac.in">
-          202301070187@mitaoe.ac.in
-        </a>
-      </div>
+<div class="contact-line">
+<b>Email</b>
+<a href="mailto:swapnillonkar0606@gmail.com">
+swapnillonkar0606@gmail.com
+</a>
+</div>
 
-      <div class="contact-item">
-        <strong>Phone:</strong><br>
-        <a href="tel:+918483040612">+91 84830 40612</a>
-      </div>
+<div class="contact-line">
+<b>College Email</b>
+<a href="mailto:202301070187@mitaoe.ac.in">
+202301070187@mitaoe.ac.in
+</a>
+</div>
 
-      <div class="contact-item">
-        <strong>Location:</strong><br>
-        Ahilyanagar, Maharashtra, India
-      </div>
-    </div>
+<div class="contact-line">
+<b>Phone</b>
+<a href="tel:+918483040612">
++91 84830 40612
+</a>
+</div>
 
-    <div class="card">
-      <h3>Professional Profiles</h3>
+<div class="contact-line">
+<b>Location</b>
+Ahilyanagar, Maharashtra, India – 414604
+</div>
 
-      <p>
-        I am interested in opportunities in hardware,
-        embedded systems, electronics and firmware development.
-        Feel free to connect with me.
-      </p>
+</article>
 
-      <div class="socials">
-        <a href="https://www.linkedin.com/in/swapnil-lonkar-5304a6283"
-           target="_blank">LinkedIn ↗</a>
+<article class="card">
 
-        <a href="https://github.com/Swapnillonkar1"
-           target="_blank">GitHub ↗</a>
+<h3>Professional Profiles</h3>
 
-        <a href="https://x.com/LonkarSwapnil1"
-           target="_blank">Twitter ↗</a>
-      </div>
+<p>
+Explore my professional and project profiles or get in touch
+by email.
+</p>
 
-      <div class="actions">
-        <a class="btn btn-primary"
-           href="mailto:swapnillonkar0606@gmail.com">
-          Send Email
-        </a>
-      </div>
-    </div>
+<div class="socials">
 
-  </div>
+<a href="https://www.linkedin.com/in/swapnil-lonkar-5304a6283"
+target="_blank">
+LinkedIn ↗
+</a>
+
+<a href="https://github.com/Swapnillonkar1"
+target="_blank">
+GitHub ↗
+</a>
+
+<a href="https://x.com/LonkarSwapnil1"
+target="_blank">
+X / Twitter ↗
+</a>
+
+</div>
+
+<div class="actions">
+<a class="btn primary"
+href="mailto:swapnillonkar0606@gmail.com">
+Send an Email
+</a>
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+<!-- PERSONAL INTERESTS -->
+
+<section>
+
+<div class="section-head">
+<h2>Beyond <span>Engineering</span></h2>
+</div>
+
+<div class="card">
+
+<p>
+Personal interests: Reading, listening to music, playing sports,
+exploring new technologies and travelling.
+Languages: English, Marathi and Hindi.
+</p>
+
+</div>
 
 </section>
 
 </main>
 
 <footer>
-  <p>© <span id="year"></span> Swapnil Lahu Lonkar</p>
-  <p>Designed with passion for Electronics & Embedded Systems.</p>
+<div class="container">
+© <span id="year"></span> Swapnil Lahu Lonkar · Electronics & Telecommunication Engineering
+</div>
 </footer>
 
 <script>
-  document.getElementById("year").textContent =
-    new Date().getFullYear();
+document.getElementById("year").textContent =
+new Date().getFullYear();
 </script>
 
 </body>
